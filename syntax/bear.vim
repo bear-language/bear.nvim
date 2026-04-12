@@ -36,7 +36,7 @@ syntax keyword bearRepeat
       \ while for in
 
 syntax keyword bearMacro
-      \ sizeof alignof typeof alignas
+      \ sizeof alignof typeof alignas static_assert same_type type_to_str
 
 syntax keyword bearKeyword
       \ mod use fn mt dt
