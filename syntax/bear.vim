@@ -11,9 +11,6 @@ syntax case match
 " regular, only matches if it starts with lowercase or underscore
 syntax match bearIdentifier /\<[a-z_][A-Za-z0-9_]*\>/
 
-" scoped
-syntax match bearScopedIdentifier /\<[A-Za-z_][A-Za-z0-9_]*\(\.\.[A-Za-z_][A-Za-z0-9_]*\)\+\>/
-
 " ------------------------
 " keywords (from token map)
 " ------------------------
@@ -36,7 +33,7 @@ syntax keyword bearRepeat
       \ while for in
 
 syntax keyword bearMacro
-      \ sizeof alignof typeof alignas static_assert same_type type_to_str
+      \ sizeof alignof typeof alignas 
 
 syntax keyword bearKeyword
       \ mod use fn mt dt
@@ -93,6 +90,9 @@ syntax match bearOperator /\v\+\+|--|\.\.\./
 
 " highlight <- and => operators since they're more syntactically significant
 syntax match bearSpecial /=>\|<-/
+
+" highlight builtins as special
+syntax match bearSpecial /@same_type\|@type_to_str\|@static_assert/
 
 " ------------------------
 " delims / punc
