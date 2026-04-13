@@ -94,9 +94,6 @@ syntax match bearSpecial /=>\|<-/
 " highlight builtins as special
 syntax match bearSpecial /@same_type\|@type_to_str\|@static_assert/
 
-" highlight as keyword, like typeof
-syntax match bearKeyword /decay/
-
 " ------------------------
 " delims / punc
 " ------------------------
@@ -108,6 +105,9 @@ syntax match bearDelimiter /[(){}\[\],;:#.]/
 
 " foo(...
 syntax match bearFunction /\<[a-z_][A-Za-z0-9_]*\ze\s*(/
+
+" highlight as keyword, like typeof
+syntax match bearKeyword /decay/
 
 " ------------------------
 " special id styles
