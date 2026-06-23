@@ -92,7 +92,7 @@ syntax match bearOperator /\v\+\+|--|\.\.\./
 syntax match bearSpecial /=>\|<-/
 
 " highlight builtins as special
-syntax match bearSpecial /@same_type\|@type_to_str\|@has_contract\|@static_assert\|@defined\|@inferable_as/
+syntax match bearSpecial /@same_type\|@type_to_str\|@has_contract\|@static_assert\|@defined\|@inferable_as\|@err\|@warn\|@note\|@help/
 
 " ------------------------
 " delims / punc
