@@ -106,6 +106,9 @@ syntax match bearDelimiter /[(){}\[\],;:#.]/
 " foo(...
 syntax match bearFunction /\<[a-z_][A-Za-z0-9_]*\ze\s*(/
 
+" turbofish: foo::<...> / foo::T
+syntax match bearFunction /\<[a-z_][A-Za-z0-9_]*\ze::/
+
 " highlight as keyword, like typeof
 syntax match bearKeyword /decay/
 
