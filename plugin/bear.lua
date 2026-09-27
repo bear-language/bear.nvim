@@ -1,6 +1,6 @@
 -- plugin/bear.lua
 -- Bear language syntax highlighting
--- https://github.com/yourname/nvim-bear
+-- https://github.com/bear-language/bear.nvim
 
 if vim.g.loaded_bear then
 	return
