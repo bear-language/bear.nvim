@@ -88,8 +88,8 @@ syntax match bearOperator /\v[+\-*/%=&|!<>^~]/
 " inc / dec / ellipsis
 syntax match bearOperator /\v\+\+|--|\.\.\./
 
-" highlight <- and => operators since they're more syntactically significant
-syntax match bearSpecial /=>\|<-/
+" highlight => operators since they're more syntactically significant
+syntax match bearSpecial /=>/
 
 " highlight builtins as special
 syntax match bearSpecial /@same_type\|@type_to_str\|@has_contract\|@static_assert\|@defined\|@inferable_as\|@err\|@warn\|@note\|@help\|@alignof\|@sizeof\|@id\|@type_id\|@members_of\|@statics_of\|@scoped_id/
