@@ -21,7 +21,7 @@ syntax keyword bearStorageClass
       \ static extern compt hid pub mut
 
 syntax keyword bearStructure
-      \ variant struct union deftype
+      \ variant struct union deftype contract
 
 syntax keyword bearStatement
       \ return yield break continue
@@ -37,7 +37,7 @@ syntax keyword bearMacro
 
 syntax keyword bearKeyword
       \ mod use fn mt dt
-      \ contract requires
+      \ requires
       \ has is move as
       \ self Self typeof 
 
@@ -47,7 +47,7 @@ syntax keyword bearSpecial var
 " types (primitive)
 " ------------------------
 syntax keyword bearType
-      \ i8 u8 i16 u16 i32 u32 i64 u64 usize
+      \ i8 u8 i16 u16 i32 u32 i64 u64 usize isize
       \ char f32 f64 str bool void
 
 " ------------------------
