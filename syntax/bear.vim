@@ -80,7 +80,7 @@ syntax match bearOperator /\v>>>=/
 syntax match bearOperator /\v<<=|>>=|>>>|\.\.\.=/
 
 " 2-char
-syntax match bearOperator /->\|<<-\|::\|\.\.\|<<\|>>\|>=\|<=\|==\|!=\|+=\|-=\|*=\|\/=\|%=\|&=\|\^=\|||\|&&/
+syntax match bearOperator /\.\.\|<<\|>>\|>=\|<=\|==\|!=\|+=\|-=\|*=\|\/=\|%=\|&=\|\^=\|||\|&&/
 
 " 1-char
 syntax match bearOperator /\v[+\-*/%=&|!<>^~]/
@@ -98,6 +98,7 @@ syntax match bearSpecial /@same_type\|@type_to_str\|@has_contract\|@static_asser
 " delims / punc
 " ------------------------
 syntax match bearDelimiter /[(){}\[\],;:#.]/
+syntax match bearDelimiter /->\|::/
 
 " ------------------------
 " function / type names
